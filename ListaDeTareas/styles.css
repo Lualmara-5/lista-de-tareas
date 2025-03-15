@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Serif Text", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
+
+.contenedor {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    min-height: 30vh;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-fecha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#modo-oscuro {
+    font-size: 24px;
+    cursor: pointer;
+    color: #f39c12;
+}
+
+.fecha {
+    text-align: end;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+    opacity: 0.8;
+}
+
+.saludo {
+    font-weight: bold;
+    color: black;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+.mensaje {
+    font-weight:bold;
+    font-style: italic;
+    text-align: justify;
+    color: #333;
+    opacity: 0.9;
+    margin: 10px 0px 15px 0px; /*Arriba,Derecha,Abajo,Izquierda*/
+}
+
+.CTareas {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+    color: black;
+    opacity: 0.85;
+    margin: 20px 0px -10px 0px;
+}
+
+.contenedor-tarea {
+    display: flex;
+    background: rgb(238, 238, 238);
+    border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: none; 
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 18px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+.lista-tareas {
+    overflow-y: auto;
+    flex-grow: 1;
+    margin-top: 15px;
+}
+
+/*Clases del JavaScript*/
+.tarea {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+.tarea input[type="checkbox"] {
+    flex: 0;
+    margin-right: 15px;
+    transform: scale(1.4); 
+    cursor: pointer;
+}
+
+.tarea input[type="checkbox"]:checked {
+    accent-color: rgb(27, 171, 27);
+}
+
+.tarea span {
+    flex: 1;
+    font-size: 17px;
+}
+
+.completada {
+    text-decoration: line-through;
+    color: gray;
+}
+
+i.bx.bx-trash {
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    transform: scale(1.2); 
+}
+
+i.bx.bx-trash:hover {
+    color: red;
+}
+
+/* Estilos para el Modo Oscuro */
+
+body.oscuro {
+    background-color: #2c2c2c;
+    color: white;
+}
+
+body.oscuro .contenedor {
+    background-color: #1e1e1e;
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+body.oscuro .fecha {
+    color: white;
+    opacity: 0.8;
+}
+
+body.oscuro .saludo {
+    color: white;
+    opacity: 0.9;
+}
+
+body.oscuro .mensaje {
+    color: #dddddd;
+    opacity: 0.9;
+}
+
+body.oscuro .CTareas {
+    color: white;
+    opacity: 0.85;
+}
+
+body.oscuro .contenedor-tarea {
+    background: #444;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+body.oscuro input {
+    color: white;
+}
+
+body.oscuro .tarea {
+    border-color: #555;
+}
+
+body.oscuro .tarea input[type="checkbox"]:checked {
+    accent-color: rgb(27, 171, 27);
+}
+
+body.oscuro i.bx.bx-trash {
+    color: white;
+}
+
+body.oscuro i.bx.bx-trash:hover {
+    color: red;
+}

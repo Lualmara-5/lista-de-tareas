@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Lista De Tareas</title>
+  </head>
+
+  <body>
+    <div class="contenedor">
+      <div class="contenedor-fecha">
+        <i class="bx bxs-sun" id="modo-oscuro"></i>
+        <h3 class="fecha" id="fecha-actual"></h3>
+      </div>
+
+      <h2 class="saludo" id="saludo"></h2>
+      <p class="mensaje" id="mensaje"></p>
+
+      <div class="contenedor-tarea">
+        <input type="text" id="input-tarea" placeholder="Escribe una tarea" />
+        <button onclick="añadirTarea()">Añadir</button>
+      </div>
+
+      <h3 class="CTareas">Estas son tus tareas:</h3>
+      <div class="lista-tareas" id="lista-tareas"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
