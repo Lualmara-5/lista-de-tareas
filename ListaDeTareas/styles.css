@@ -37,6 +37,8 @@ body {
     font-size: 24px;
     cursor: pointer;
     color: #f39c12;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
 
 .fecha {
@@ -45,6 +47,7 @@ body {
     font-style: italic;
     color: black;
     opacity: 0.8;
+    user-select: none;
 }
 
 .saludo {
@@ -52,6 +55,7 @@ body {
     color: black;
     opacity: 0.9;
     margin-top: 10px;
+    user-select: none;
 }
 
 .mensaje {
@@ -61,6 +65,7 @@ body {
     color: #333;
     opacity: 0.9;
     margin: 10px 0px 15px 0px; /*Arriba,Derecha,Abajo,Izquierda*/
+    user-select: none;
 }
 
 .CTareas {
@@ -70,6 +75,7 @@ body {
     color: black;
     opacity: 0.85;
     margin: 20px 0px -10px 0px;
+    user-select: none;
 }
 
 .contenedor-tarea {
@@ -97,6 +103,8 @@ button {
     cursor: pointer;
     outline: none;
     font-size: 16px;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
 
 button:hover {
@@ -133,6 +141,7 @@ button:hover {
 .tarea span {
     flex: 1;
     font-size: 17px;
+    user-select: none;
 }
 
 .completada {
